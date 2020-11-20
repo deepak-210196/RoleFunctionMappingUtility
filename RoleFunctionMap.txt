@@ -1,0 +1,3 @@
+delete from dfuser.tbls_roles_functions_int where fin_id = concat((Select fin_id from dfuser.tbls_roles where name = '﻿MY KAC'),'_',(Select fin_id from dfuser.tbls_functions where display_name = 'Customer Profile/Accounts/AML'))
+insert into dfuser.tbls_roles_functions_int values (concat((Select fin_id from dfuser.tbls_roles where name = '﻿MY KAC'),'_',(Select fin_id from dfuser.tbls_functions where display_name = 'Customer Profile/Accounts/AML')),(Select fin_id from dfuser.tbls_roles where name = '﻿MY KAC'),(Select fin_id from dfuser.tbls_functions where display_name = 'Customer Profile/Accounts/AML'),'CRUDX','N','N',current_date,'System',current_date,'System','System',current_date,current_date,1,'COMMITTED',-1)
+
